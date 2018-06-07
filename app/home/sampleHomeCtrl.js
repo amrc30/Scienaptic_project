@@ -5,7 +5,6 @@ function sampleCtrl($http, $scope) {
     //greeting and welcome msg
 $http.get($scope.jsonurl).then(function(response) {
 	$scope.items = response.data;
-	console.log($scope.items)
 })
 }
 
